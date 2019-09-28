@@ -14,7 +14,7 @@ class Counter extends Component {
         return (
             <Router hideNavBar="true">
                 <Scene key="root">
-                    <Scene key="FirstPage" component={Home} initial={true}/>
+                    <Scene key="Home" component={Home} initial={true}/>
                     <Scene key="LogIn" component={LogIn} title="LogIn"/>
                     <Scene key="Register" component={Register} title="Register"/>
                 </Scene>
