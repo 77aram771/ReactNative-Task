@@ -1,13 +1,13 @@
 import React, {Component, Fragment} from 'react';
-import Counter from './components/counter.js';
+import Routers from './components/Routers.js';
 import SplashScreen from 'react-native-splash-screen'
 import {StyleSheet, Text, SafeAreaView} from 'react-native';
 
 export default class App extends Component {
     componentDidMount() {
-
-        SplashScreen.hide();
-
+        setTimeout(() => {
+            SplashScreen.hide();
+        }, 3000);
     };
 
     render() {
@@ -15,7 +15,7 @@ export default class App extends Component {
             <Fragment>
 
                     {SplashScreen.show()}
-                    <Counter />
+                    <Routers />
 
             </Fragment>
         );

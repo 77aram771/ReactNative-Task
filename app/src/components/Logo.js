@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {View, StyleSheet, Image, Text} from 'react-native';
-import logo from '../asstes/image/logo.png';
+import {View, StyleSheet, Image} from 'react-native';
 
 
 class Logo extends Component {

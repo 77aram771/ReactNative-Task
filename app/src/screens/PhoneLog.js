@@ -9,6 +9,7 @@ const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
 let tallage = 90;
 let result = width / 100 * tallage;
+
 class PhoneLog extends Component {
 
     constructor() {
@@ -46,7 +47,8 @@ class PhoneLog extends Component {
                         fontSize: 18,
                         lineHeight: 16,
                         marginBottom: 20
-                    }}>Phone Number</Text>
+                    }}
+                    >Phone Number</Text>
                     <Text style={{
                         fontWeight: '700',
                         fontSize: 12,
@@ -90,7 +92,7 @@ class PhoneLog extends Component {
                     <View style={styles.CheckBox}>
                         <CheckBox
                             checkedIcon={<Image style={{
-
+                                width: 5
                             }} source={require('../asstes/image/checked.png')}/>}
                             uncheckedIcon={<Image source={require('../asstes/image/unchecked.png')}/>}
                             checked={this.state.checked}
@@ -108,7 +110,7 @@ class PhoneLog extends Component {
                                 borderBottomWidth: 1,
                                 borderBottomColor: '#fff',
                                 borderBottomStyle: 'solid',
-                                marginTop: 5
+                                marginTop: 5,
                             }}>Accept Privacy and Policy</Text>
                         </TouchableOpacity>
                     </View>
@@ -155,8 +157,7 @@ let styles = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'center',
         flexDirection: 'row',
-
-        height: 30
+        height: 30,
     },
     button: {
         marginTop: 20,
@@ -181,4 +182,4 @@ let styles = StyleSheet.create({
 });
 
 
-export default PhoneLog
+export default PhoneLog;

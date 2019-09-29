@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, TextInput, Dimensions} from 'react-native';
 
-class Register extends Component{
+const width = Dimensions.get('window').width;
+const height = Dimensions.get('window').height;
+
+class Profile extends Component {
+    constructor(props){
+        super(props)
+    }
+
     render(){
         return(
             <View>
@@ -13,4 +20,4 @@ class Register extends Component{
     }
 }
 
-export default Register
+export default Profile;

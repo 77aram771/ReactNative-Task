@@ -4,5 +4,9 @@
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
-    <application android:usesCleartextTraffic="true" tools:targetApi="28" tools:ignore="GoogleAppIndexingWarning" />
+    <application android:usesCleartextTraffic="true" tools:targetApi="28" tools:ignore="GoogleAppIndexingWarning" >
+        <meta-data
+                android:name="com.google.android.geo.AIzaSyCdrjkj2qyLdKKJvnojm6393-JCqVeAvMQ"
+                android:value="Your Google maps API Key Here"/>
+    </application>
 </manifest>

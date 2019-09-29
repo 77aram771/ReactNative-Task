@@ -3,10 +3,12 @@ import {Actions} from 'react-native-router-flux';
 import {StyleSheet, TouchableOpacity, View, Dimensions, Text, Button, Image} from  'react-native';
 import Logo from "../components/Logo";
 import SmoothPinCodeInput from "react-native-smooth-pincode-input";
+
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
-var tallage = 90;
-var result = width / 100 * tallage;
+let tallage = 90;
+let result = width / 100 * tallage;
+
 class LogIn extends Component {
 
     constructor(props) {
@@ -61,7 +63,7 @@ class LogIn extends Component {
                 <TouchableOpacity
                     style={styles.Buttonn}
                     onPress={() => {
-                        Actions.Home()
+                        Actions.RouterTab()
                     }}>
                     <Text style={styles.ButtonText}> Log In </Text>
                 </TouchableOpacity>

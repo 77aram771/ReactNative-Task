@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, TextInput, Dimensions} from 'react-native';
 
-class Register extends Component{
+class ComingSoon extends Component{
     render(){
         return(
             <View>
                 <Text>
-                    Profile
+                    ComingSoon
                 </Text>
             </View>
         )
     }
 }
 
-export default Register
+export default ComingSoon
