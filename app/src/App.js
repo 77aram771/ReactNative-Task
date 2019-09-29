@@ -5,16 +5,18 @@ import {StyleSheet, Text, SafeAreaView} from 'react-native';
 
 export default class App extends Component {
     componentDidMount() {
-        setTimeout(() => {
-            SplashScreen.hide();
-        }, 3000)
+
+        SplashScreen.hide();
+
     };
 
     render() {
         return (
             <Fragment>
-                {SplashScreen.show()}
-                <Counter />
+
+                    {SplashScreen.show()}
+                    <Counter />
+
             </Fragment>
         );
     }

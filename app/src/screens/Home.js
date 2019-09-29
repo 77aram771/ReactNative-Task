@@ -1,18 +1,19 @@
 import React, {Component} from 'react';
-import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } from 'native-base';
+import {Router, Scene, Drawer, Stack} from 'react-native-router-flux';
+import Register from './Register';
+import Map from './Map';
 
-class Home extends Component{
-    render(){
-        return(
-            <Container>
-                <Content>
-                    <Card>
-                        <Text>
-                            Home
-                        </Text>
-                    </Card>
-                </Content>
-            </Container>
+class Home extends Component {
+    render() {
+        return (
+            <Router>
+                <Scene hideNavBar>
+                    <Scene key="tabbar" tabs tabBarStyle={{backgroundColor: '#000'}}>
+                        <Scene key="Map" title="Map" component={Map} hideNavBar/>
+                        <Scene key="Register" title="Register" component={Register} hideNavBar/>
+                    </Scene>
+                </Scene>
+            </Router>
         )
     }
 }
